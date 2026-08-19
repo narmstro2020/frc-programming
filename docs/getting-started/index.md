@@ -1,7 +1,9 @@
 # Getting started
 
-Before you write a line of robot code you need a machine that can build and deploy.
-This is the part that stops people, so we do it first and we do it together.
+This comes **after** the [Java Bootcamp](../java/index.md), not before it. The lab
+computers are already installed and ready, so if you are working in the lab there
+is nothing here you have to do. Follow these steps when you want your own machine
+able to build and deploy too.
 
 !!! info "We are on WPILib 2026.2.1"
     2027 is in alpha and still moving. Install **2026.2.1** &mdash; not the newest
@@ -58,10 +60,10 @@ Team **829**. It lives in `.wpilib/wpilib_preferences.json`:
 
 If your deploy cannot find the robot, check this file first.
 
-## The December transition
+## The 2027 transition
 
-Sometime in **December**, once 2027 WPILib settles into its final shape, we move
-over. This is not a version bump &mdash; the 2027 control system replaces the
+**In December or after kickoff**, once 2027 WPILib settles into its final shape,
+we move over. This is not a version bump &mdash; the 2027 control system replaces the
 roboRIO with **SystemCore**, and the gradle plugin, the deploy target, and parts
 of the API all change with it. We will do that transition together, as a meeting,
 rather than everyone doing it alone.

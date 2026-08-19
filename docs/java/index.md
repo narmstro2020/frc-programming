@@ -1,11 +1,14 @@
-# Java
+# Java Bootcamp
 
-Robot code is Java. Not "Java-flavoured blocks", not copy-paste from last year's
-repo &mdash; actual Java, with types and objects and a compiler that will tell you
-exactly what it thinks of your work.
+Everyone starts here &mdash; first year or fourth, this is the common starting
+line. Robot code is Java: not "Java-flavoured blocks", actual Java, with types and
+objects and a compiler that will tell you exactly what it thinks of your work.
 
 You do not need to be good at it before you touch a robot. You do need to stop
 being surprised by it.
+
+You will not install anything or open VS Code for any of this. That comes after
+the bootcamp, and the lab computers are already set up when it does.
 
 ## Start with Perscript
 
@@ -30,8 +33,7 @@ Before WPILib will make any sense at all:
   is worth two that do half each
 - **Classes and objects** &mdash; fields, constructors, `this`
 - **Interfaces and inheritance** &mdash; this one matters more than usual for us,
-  because it is the whole idea behind how DigiLib swaps one motor controller for
-  another
+  because it is the shape DigiLib is built out of
 
 ## Then: Java the way FRC uses it
 

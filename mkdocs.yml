@@ -40,15 +40,13 @@ theme:
 nav:
   - Home: index.md
   - Meetings: meetings.md
+  - Java Bootcamp:
+      - java/index.md
   - Getting started:
       - getting-started/index.md
-  - Java: 
-      - java/index.md
   - DigiLib:
       - digilib/index.md
-      - digilib/subsystems.md
-      - digilib/swerve.md
-      - digilib/vision.md
+      - digilib/motor-subsystems.md
   - Reference:
       - reference/index.md
 
