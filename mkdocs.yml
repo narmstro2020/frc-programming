@@ -46,6 +46,9 @@ nav:
       - java/index.md
   - DigiLib:
       - digilib/index.md
+      - digilib/subsystems.md
+      - digilib/swerve.md
+      - digilib/vision.md
   - Reference:
       - reference/index.md
 
