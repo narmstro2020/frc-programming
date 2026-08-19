@@ -50,4 +50,4 @@ VS Code. Use the **2026 WPILib VS Code** shortcut.
 **"It built yesterday and not today."** `./gradlew clean` then build again, on wifi.
 
 **"Which WPILib do I install?"** 2026.2.1. Not the newest one on the page.
-See [Getting started](../getting-started/index.md).
+The lab computers are already set up; ask before installing on your own machine.

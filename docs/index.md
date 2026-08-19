@@ -25,7 +25,6 @@ The plan for the fall is straightforward:
 | If you are... | Start here |
 | :--- | :--- |
 | Starting out &mdash; everyone starts here | [Java Bootcamp](java/index.md) |
-| Done with the bootcamp | [Getting started](getting-started/index.md) |
 | Ready to write robot code | [DigiLib](digilib/index.md) |
 | Looking something up | [Reference](reference/index.md) |
 

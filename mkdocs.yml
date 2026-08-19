@@ -42,8 +42,6 @@ nav:
   - Meetings: meetings.md
   - Java Bootcamp:
       - java/index.md
-  - Getting started:
-      - getting-started/index.md
   - DigiLib:
       - digilib/index.md
       - digilib/motor-subsystems.md
