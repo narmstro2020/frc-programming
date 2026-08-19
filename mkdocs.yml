@@ -1,0 +1,68 @@
+site_name: FRC 829 Programming
+site_description: Learning the programming side of FRC - Java, WPILib, and DigiLib.
+site_url: https://narmstro2020.github.io/robotics/
+site_author: Nicholas Armstrong
+
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/robot-industrial
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Meetings: meetings.md
+  - Getting started:
+      - getting-started/index.md
+  - Java: 
+      - java/index.md
+  - DigiLib:
+      - digilib/index.md
+  - Reference:
+      - reference/index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+
+extra_css:
+  - assets/robotics.css
+
+copyright: FRC Team 829 - Warren Central / Walker Career Center

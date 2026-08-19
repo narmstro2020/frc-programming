@@ -1,0 +1,53 @@
+name: Publish robotics site
+
+# Builds this site and pushes it into narmstro2020/narmstro2020.github.io under
+# /robotics/, as a sibling of the /pathway/ site.
+#
+# Requires a repository secret ACTIONS_DEPLOY_KEY: the private half of an ed25519
+# keypair whose public half is registered as a write-enabled deploy key on
+# narmstro2020/narmstro2020.github.io.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-robotics
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build site
+        run: python -m mkdocs build --strict
+
+      - name: Deploy to narmstro2020.github.io/robotics/
+        if: github.event_name != 'pull_request'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: narmstro2020/narmstro2020.github.io
+          publish_branch: main
+          publish_dir: ./site
+          # Scopes the deploy to /robotics/ so /pathway/ and the root are left alone.
+          destination_dir: robotics
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+          commit_message: "Publish robotics site from ${{ github.sha }}"
